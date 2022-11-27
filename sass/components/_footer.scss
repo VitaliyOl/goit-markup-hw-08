@@ -12,7 +12,7 @@
   }
 }
 
-.container--tablet {
+.tablet-container {
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
