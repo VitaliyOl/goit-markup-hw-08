@@ -23,9 +23,6 @@
 
   padding: 40px;
 
-  max-width: 450px;
-  max-height: 609px;
-
   transform: scale(1);
   transition: transform $trns;
   overflow-y: scroll;
@@ -40,6 +37,11 @@
     transform: scale(0.9);
   }
 
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+    max-height: 609px;
+  }
+
   @media screen and (min-width: $desktop) {
     position: absolute;
     top: 50%;
@@ -48,8 +50,8 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform $trns;
 
-    max-width: 528px;
-    max-height: 581px;
+    min-width: 528px;
+    min-height: 581px;
 
     .backdrop.is-hidden & {
       transform: translate(-50%, -50%) scale(0.9);
