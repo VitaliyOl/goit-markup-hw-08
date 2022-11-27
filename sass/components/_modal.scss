@@ -1,0 +1,89 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: opacity $trns, visibility $trns;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 767px) {
+    padding: 93px 15px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    padding: 208px 159px;
+  }
+}
+
+.modal {
+  position: relative;
+
+  padding: 40px;
+
+  max-width: 450px;
+  max-height: 609px;
+
+  transform: scale(1);
+  transition: transform $trns;
+  overflow-y: scroll;
+
+  background-color: $white-color;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  .backdrop.is-hidden & {
+    transform: scale(0.9);
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $trns;
+
+    max-width: 528px;
+    max-height: 581px;
+
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+}
+
+.button-modal {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  cursor: pointer;
+
+  transition: fill $trns;
+
+  outline-style: none;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  background-color: $white-color;
+}
+.button-modal__icon {
+  transition: fill $trns;
+
+  .button-modal:hover &,
+  .button-modal:focus & {
+    fill: $accent-color;
+  }
+}
