@@ -3,13 +3,23 @@
   padding-bottom: 60px;
 
   background-color: $team-fon-color;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__list {
+  margin-top: 30px;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
   }
 }
 .card-team {

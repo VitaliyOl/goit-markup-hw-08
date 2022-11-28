@@ -1,15 +1,23 @@
 .customer {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.title {
-  margin-bottom: 30px;
-}
 .customer__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  margin-top: 30px;
+
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
+  }
 }
 
 .customer__item {

@@ -46,7 +46,7 @@
   flex-direction: column;
 
   width: 100vw;
-  height: 796px;
+  height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
@@ -71,8 +71,6 @@
 }
 
 .mobile-menu {
-  margin-bottom: auto;
-
   font-weight: 500;
   font-size: 40px;
   line-height: calc(47 / 40);
@@ -112,6 +110,7 @@
 }
 
 .mobile-contacts {
+  margin-top: auto;
   margin-bottom: 64px;
 
   font-weight: 500;
