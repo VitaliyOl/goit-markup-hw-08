@@ -1541,6 +1541,14 @@ button {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .project__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .overlay__text {
   font-weight: 400;
   font-size: 18px;
@@ -1553,10 +1561,9 @@ button {
   border: 1px solid #eeeeee;
   border-top: none;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1200px) {
-  .padding {
-    padding-bottom: 56px;
+  .project__content {
+    flex-grow: 1;
   }
 }
 

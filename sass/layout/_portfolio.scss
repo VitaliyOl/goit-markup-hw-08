@@ -107,6 +107,15 @@
     padding: 63px 24px;
   }
 }
+
+.project__link {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
 .overlay__text {
   font-weight: 400;
   font-size: 18px;
@@ -120,11 +129,9 @@
 
   border: 1px solid #eeeeee;
   border-top: none;
-}
 
-.padding {
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    padding-bottom: 56px;
+    flex-grow: 1;
   }
 }
 
