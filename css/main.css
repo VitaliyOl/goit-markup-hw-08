@@ -1106,10 +1106,15 @@ button {
   margin-top: auto;
   margin-bottom: 64px;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.1666666667;
+  font-size: 34px;
+  line-height: 1.1764705882;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mobile-contacts__mail {
+  font-size: 24px;
+  line-height: 1.1666666667;
 }
 
 .mobile-contacts__item:first-child {
@@ -1119,13 +1124,11 @@ button {
 .mobile-contacts__link {
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1), line-height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #757575;
 }
 .mobile-contacts__link:hover, .mobile-contacts__link:focus {
   color: #2196f3;
-  font-size: 34px;
-  line-height: 1.1764705882;
 }
 
 .mobile-social {
@@ -1497,7 +1500,7 @@ button {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
   .project__items {
     flex-basis: calc((100% - 30px) / 2);
   }
