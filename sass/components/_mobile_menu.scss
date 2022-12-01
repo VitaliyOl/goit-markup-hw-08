@@ -77,6 +77,10 @@
   letter-spacing: 0.02em;
 
   color: #2196f3;
+
+  @media screen and (max-width: $mobile) {
+    font-size: calc((40 / 480) * 100vw);
+  }
 }
 
 .mobile-menu__item {
@@ -124,6 +128,10 @@
 .mobile-contacts__mail {
   font-size: 24px;
   line-height: calc(28 / 24);
+
+  @media screen and (max-width: $mobile) {
+    font-size: calc((24 / 480) * 100vw);
+  }
 }
 
 .mobile-contacts__item {
@@ -143,6 +151,10 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (max-width: $mobile) {
+    font-size: calc((34 / 480) * 100vw);
+  }
 }
 
 .mobile-social {
@@ -154,6 +166,10 @@
   letter-spacing: 0.02em;
 
   color: $accent-color;
+
+  @media screen and (max-width: $mobile) {
+    font-size: calc((18 / 480) * 100vw);
+  }
 }
 .mobile-social__item {
   &:not(:last-child) {

@@ -87,6 +87,10 @@
 
   color: $white-color;
 
+  @media screen and (max-width: $mobile) {
+    font-size: calc((26 / 480) * 100vw);
+  }
+
   @media screen and (min-width: $desktop) {
     max-width: 696px;
     margin-bottom: 30px;
